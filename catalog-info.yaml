@@ -1,0 +1,44 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: '"bobit777" Azure infrastructure and resources'
+  annotations:
+    github.com/project-slug: ibrt2016/terraform-azure-infra-bobit777 # Change the value to your github repo which contains terraform code.
+    backstage.io/techdocs-ref: dir:.
+  links:
+  - url: https://github.com/claranet/terraform-azurerm-vnet
+    title: 'Virtual Network Terraform Module'
+    icon: github
+  tags:
+    - azure
+    - vnet
+    - terraform
+    - high-criticality
+    - ticket-number-90998
+    - entity-us
+    - owner-bob-tayara
+    - stack-bobit777
+    - env-prod
+    - created-on-2024-07-30
+  title: 'Brand New Stack bobit777 - Azure Reource Group and Virtal Network - Ticket #90998' # you can give any title
+  description: |
+   Create **Azure Virtual Network** in stack **bobit777** and in **prod** environment\
+   \
+   **Ticket number:**  90998\
+   **Created on:**  2024-07-30\
+   **Details:**  Create an **Azure Virtual network** and a **resource group** in a brand new stack **bobit777**, in **prod** environment and in **us-east** region\
+   **Action:**  Create a new **Resource Group** and a new **Virtual Network**\
+   **Brand new stack created?:**  Yes\
+   **Azure region:**  us-east\
+   **Virtual network address space:**  10.30.0.0/16\
+   **Virtual network suffix:**  001\
+   **Stack name:**  bobit777\
+   **Stack owner:**  bob tayara\
+   **Azure subscription:**  infra\
+   **Criticality:**  High\
+   **Entity:**  US\
+   **Cost center:**  09999
+spec:
+  type: azure_resource
+  owner: bob tayara
+  lifecycle: prod
